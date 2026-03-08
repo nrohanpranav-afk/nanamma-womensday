@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>నా ప్రియమైన నానమ్మ ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Noto Sans Telugu","Segoe UI",sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:linear-gradient(-45deg,#fff0f5,#fde2ff,#fff5f7,#f8f4ff);
+background-size:400% 400%;
+animation:bgMove 18s ease infinite;
+
+color:#333;
+overflow-x:hidden;
+
+}
+
+@keyframes bgMove{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/* HERO */
+
+.hero{
+
+min-height:80vh;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:40px 18px 20px 18px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+margin-bottom:14px;
+
+animation:glow 3s infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{ text-shadow:0 0 10px rgba(255,120,160,.4); }
+to{ text-shadow:0 0 28px rgba(255,120,160,.9); }
+
+}
+
+.hero p{
+
+max-width:600px;
+font-size:18px;
+line-height:1.8;
+
+}
+
+/* CARD */
+
+.card{
+
+max-width:720px;
+
+margin:30px auto;
+
+background:rgba(255,255,255,.65);
+backdrop-filter:blur(18px);
+
+padding:28px;
+
+border-radius:24px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+font-size:17px;
+line-height:2;
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:16px;
+
+max-width:720px;
+
+margin:25px auto;
+
+padding:0 16px;
+
+}
+
+.gallery img{
+
+width:100%;
+height:210px;
+
+object-fit:cover;
+
+border-radius:16px;
+
+box-shadow:0 18px 40px rgba(0,0,0,.18);
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.03);
+
+}
+
+/* FINAL MESSAGE */
+
+.final{
+
+text-align:center;
+
+margin:40px auto 60px auto;
+
+max-width:720px;
+
+font-size:18px;
+
+line-height:2;
+
+padding:0 20px;
+
+}
+
+/* VIEWER */
+
+.viewer{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.9);
+
+display:none;
+
+align-items:center;
+justify-content:center;
+
+z-index:200;
+
+}
+
+.viewer img{
+
+max-width:92%;
+max-height:92%;
+
+border-radius:14px;
+
+}
+
+/* FLOWERS */
+
+.flower{
+
+position:fixed;
+
+top:-10px;
+
+font-size:18px;
+
+animation:fall linear infinite;
+
+pointer-events:none;
+
+opacity:.8;
+
+}
+
+@keyframes fall{
+
+0%{ transform:translateY(-10vh) rotate(0deg); }
+
+100%{ transform:translateY(110vh) rotate(360deg); }
+
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.card{
+font-size:16px;
+padding:22px;
+}
+
+.gallery{
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.gallery img{
+height:180px;
+}
+
+.final{
+font-size:17px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>నా ప్రియమైన నానమ్మ ❤️</h1>
+
+<p>
+ఈ చిన్న వెబ్‌సైట్‌ను నేను ప్రత్యేకంగా మీ కోసం ప్రేమతో తయారు చేశాను.
+నా జీవితంలో మీరు ఎంత ముఖ్యమైన వ్యక్తో చెప్పడానికి
+ఇది ఒక చిన్న ప్రయత్నం మాత్రమే.
+</p>
+
+</div>
+
+<div class="card">
+
+<p id="messageText"></p>
+
+</div>
+
+<div class="gallery">
+
+<img src="nanamma1.jpg" onclick="openViewer(this)">
+<img src="nanamma2.jpg" onclick="openViewer(this)">
+
+</div>
+
+<div class="final">
+
+నానమ్మా,
+
+నా జీవితంలో మీరు ఉన్నందుకు
+నేను నిజంగా చాలా అదృష్టవంతుడిని.
+
+మీరు నాకు నానమ్మ మాత్రమే కాదు —
+మీరు నా జీవితంలో ఒక పెద్ద ఆశీర్వాదం.
+
+మీ ప్రేమ, మీ ఆశీస్సులు,
+మీరు చూపించే ఆప్యాయం
+ఇవన్నీ నాకు ఎప్పటికీ చాలా విలువైనవి.
+
+మీరు ఎప్పుడూ ఆరోగ్యంగా,
+సంతోషంగా ఉండాలని
+నేను ప్రతిరోజూ దేవుణ్ణి ప్రార్థిస్తాను.
+
+నేను మిమ్మల్ని చాలా చాలా ప్రేమిస్తున్నాను.
+
+ఎప్పటికీ మీ మనవడు ❤️
+
+</div>
+
+<div class="viewer" id="viewer" onclick="closeViewer()">
+<img id="viewerImg">
+</div>
+
+<script>
+
+/* PHOTO VIEWER */
+
+function openViewer(img){
+
+viewer.style.display="flex"
+viewerImg.src=img.src
+
+}
+
+function closeViewer(){
+
+viewer.style.display="none"
+
+}
+
+/* MESSAGE */
+
+const message = `నానమ్మా,
+
+నా చిన్నప్పటి నుండి ఇప్పటి వరకు
+నా జీవితంలో ఉన్న చాలా అందమైన జ్ఞాపకాల్లో
+మీరు ఒక ముఖ్యమైన భాగం.
+
+మీరు చెప్పిన కథలు,
+మీరు చేసిన వంటలు,
+మీరు ఇచ్చిన ప్రేమ —
+ఇవి అన్నీ నాకు ఎప్పటికీ మర్చిపోలేని జ్ఞాపకాలు.
+
+మీరు ఎప్పుడూ మా అందరినీ
+ఎంతో ప్రేమతో చూసుకుంటారు.
+
+మీ నవ్వు మా ఇంటిని ఆనందంతో నింపుతుంది.
+
+మీరు మా కుటుంబానికి ఒక పెద్ద ఆశీర్వాదం.
+
+మీ ప్రేమ మా జీవితాలను
+మరింత అందంగా చేస్తుంది.
+
+నానమ్మా,
+మీరు నాకు చాలా ప్రత్యేకమైన వ్యక్తి.
+
+నేను మిమ్మల్ని చాలా ప్రేమిస్తున్నాను.`
+
+let i=0
+const el=document.getElementById("messageText")
+
+function type(){
+
+if(i<message.length){
+
+el.innerHTML+=message.charAt(i)
+i++
+
+setTimeout(type,26)
+
+}
+
+}
+
+type()
+
+/* FLOWERS */
+
+function createFlower(){
+
+const f=document.createElement("div")
+
+f.className="flower"
+
+f.innerHTML="🌸"
+
+f.style.left=Math.random()*100+"vw"
+f.style.animationDuration=9+Math.random()*4+"s"
+
+document.body.appendChild(f)
+
+setTimeout(()=>f.remove(),12000)
+
+}
+
+setInterval(createFlower,1200)
+
+</script>
+
+</body>
+</html>
